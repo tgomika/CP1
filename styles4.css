@@ -1,0 +1,131 @@
+/* Design Notes: I intentionally matched the size of menu titles for each card , even though the sample did not. Also, the spacing between the three menu cards in the large screen illustration was not the same, but it should have been. He even talked about the importance of aligning elements, and it's difficult for me not to align things! 
+
+My biggest problem with this assignment was the spacing around the floats; getting them to align properly was frustrating! */
+
+
+/* ** foundation ** */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family: PTSans, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.75em;
+	margin-top: 30px;
+}
+
+.container {
+	width: 100%;
+	margin-top: 30px;
+}
+	
+.row {
+	width: 100%;
+}
+
+#card {
+}
+
+#menu {
+	background-color: #9ef1fb;
+	border: 1px solid black;
+	position: relative;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	position: relative;
+
+}
+
+.item-1 {
+	position: absolute;
+	background-color: #ffa0a0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.25em;
+	width: 200px; 
+	right: 0px;
+	padding: 1px;
+	margin: -1px;
+	border: 1px solid black;
+  }
+  
+.item-2 {
+	position: absolute;
+	background-color: red;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.25em;
+	color: white;
+	width: 200px;
+	right: 0px;
+	padding: 1px;
+	margin: -1px;
+	border: 1px solid black;
+  }
+
+.item-3 {
+	position: absolute;
+	background-color: #fff0a0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.25em;
+	width: 200px; 
+	right: 0px;
+	padding: 1px;
+	margin: -1px;
+	border: 1px solid black;
+  }
+
+.item-description {
+	margin-top: 40px;
+}
+
+
+/*  ** large devices ** */
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+	float: left;
+	width: 33.33%;
+  }
+  }
+ 
+
+
+
+
+
+/*  ** medium devices ** */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+	float: left;
+	width: 50%;
+	margin-bottom: 15px;
+  }
+  .col-md-12 {
+  clear: both;
+  }
+
+}
+
+/*  ** medium devices ** */
+
+@media (max-width: 767px) {
+  .col-sm {
+	margin-left: 15px;
+	margin-right: 15px;
+  }
+
+}
